@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+@font-face {
+  font-family: "BuenosAires";
+  src: url("./assets/fonts/AOKBuenosAiresRegular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+
+.section-space{
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.side-space{
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.heading{
+  font-size: 34px;
+  font-family: "BuenosAires";
+  font-weight: 400;
+
+}
+
+span{
+        color: rgb(32, 49, 91);
+
+}
+
+.para{
+  font-size: 16px;
+  font-family: "BuenosAires";
+}

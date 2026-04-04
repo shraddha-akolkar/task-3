@@ -1,0 +1,68 @@
+
+
+
+
+
+.philosophy-section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+.top-section{
+  font-family: "BuenosAires";
+    position: relative;
+   
+    margin-bottom: 20px;
+    margin-left: 15px;
+    text-align: left;
+}
+
+.top-heading {
+    font-weight: 100px !important;
+    text-align: center;
+ color: rgba(21, 21, 21, 0.8);
+ margin-bottom: 20px;
+
+}
+
+.top-section span{
+        color: rgb(32, 49, 91);
+
+}
+
+
+.philosophy-container {
+  display: flex;
+  flex-direction: row;
+gap: 25px;
+width: 100%;
+}
+
+.philosophy-item {
+ 
+ 
+  width: 100%;
+}
+
+
+.icon-wrapper{
+    width: 46px;
+    height: 43px;
+}
+
+.philosophy-item h3{
+        padding: 12px 0 8px;
+        font-size: 20px;
+  font-family: "BuenosAires";
+
+
+}
+
+.philosophy-item p{
+    margin-bottom: 16px;
+    font-size: 15.5px;
+    color: #2A2A2A;
+  font-family: "BuenosAires";
+text-align: justify;
+}

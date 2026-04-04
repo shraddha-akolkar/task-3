@@ -1,0 +1,33 @@
+.terms-section{
+}
+
+.terms-top{
+    /* padding-bottom: 24px; */
+}
+.terms-heading{
+    /* line-height: 30px; */
+    margin-bottom: 20px;
+
+}
+
+.terms-heading::before{
+    height: 20px;
+    width: 40px;
+    background-color: aquamarine;
+}
+
+.terms-bottom{
+    padding-left: 50px;
+}
+
+.terms-bottom ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;             
+    list-style-type: disc; 
+}
+
+.terms-bottom ul li{
+    gap: 10px;
+    /* padding-bottom: 10px; */
+}

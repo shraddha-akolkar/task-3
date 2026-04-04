@@ -1,0 +1,27 @@
+.dream-section{
+    background-color: #ebe9e5e5;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+color: #000000;
+
+}
+
+.top-header{
+    padding-bottom: 16px;
+}
+
+.top-header h3{
+  font-family: "BuenosAires";
+font-size: 14px;
+}
+
+.bottom-section p{
+    padding-bottom: 10px;
+  font-family: "BuenosAires";
+font-size: 13px;
+}
+
+.bottom-section p:nth-child(3){
+    padding-bottom: 0;
+}

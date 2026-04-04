@@ -1,0 +1,29 @@
+.overview-section{
+    /* background-color: cornflowerblue; */
+    position: relative;
+}
+
+.img-section img{
+    width: 100%;
+}
+
+
+.overview-section::before{
+    content: "";
+  position: absolute;
+  top:0px; 
+  left: 50%;
+  transform: translateX(-50%);
+  
+  width: 1261px;
+  height: 588px;
+
+
+
+  border-bottom-left-radius: 700px;
+  border-bottom-right-radius: 700px;
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+
+  
+}
