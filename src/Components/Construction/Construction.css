@@ -21,7 +21,7 @@
 
 .construction-title {
   /* font-size: 48px; */
-  font-weight: normal;
+  /* font-weight: normal; */
   padding-bottom: 20px;
 word-spacing: 10px;
 
@@ -83,7 +83,6 @@ cursor: pointer;
 
 
 
-/* ================= MOBILE VIEW ================= */
 @media (max-width: 768px) {
 
   .construction-section {
@@ -97,18 +96,18 @@ cursor: pointer;
   }
 
   .video-wrapper {
-    width: 100%; /* ✅ full width */
+    width: 100%; 
   }
 
   .video-card {
-    width: 100%; /* ✅ responsive */
+    width: 100%;
     border-radius: 12px;
   }
 
   .video-inner {
     width: 92%;
     margin-left: auto;
-    margin-right: auto; /* ✅ center properly */
+    margin-right: auto; 
     margin-top: -12px;
 
     border-radius: 10px;
@@ -121,7 +120,6 @@ cursor: pointer;
 
 
 
-/* ================= TABLET VIEW ================= */
 @media (min-width: 769px) and (max-width: 1024px) {
 
   .construction-section {
@@ -135,7 +133,7 @@ cursor: pointer;
 
   .video-wrapper {
     width: 100%;
-    max-width: 650px; /* ✅ controlled width */
+    max-width: 650px; 
   }
 
   .video-card {

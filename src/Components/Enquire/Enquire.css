@@ -1,11 +1,9 @@
 .enquire-section {
   width: 100%;
   min-height: auto;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   background-color: #f5f3f2;
 
   background-image: 
@@ -17,7 +15,7 @@
   background-size: 38%, 38%;
 
   position: relative;
-  padding: 50px 0;
+  padding: 60px 0;
 }
 
 .enquire-section::after {
@@ -28,52 +26,51 @@
   z-index: 1;
 }
 
+/* ✅ WIDTH INCREASED HERE */
 .enquire-card {
   position: relative;
   z-index: 2;
 
-  max-width: 520px;
-  width: 90%;
+  max-width: 560px;   /* 🔥 increased */
+  /* width: 100%; */
 
+  margin: 0 auto;
   background: #fff;
-  padding: 35px 40px;
+  padding: 40px 35px;
 
-  border-radius: 14px;
+  border-radius: 16px;
   border: 1px solid #2e3f6e;
 
-  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
   text-align: center;
 }
 
 .enquire-title {
-  
   color: #333;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .enquire-title span {
   color: #2e3f6e;
-  /* font-weight: 600; */
+  font-weight: 400;
+
 }
 
 .enquire-content {
   text-align: left;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .enquire-row {
   display: flex;
   gap: 14px;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
   cursor: pointer;
   align-items: flex-start;
 }
 
 .enquire-row p {
-  font-size: 13px;
-  font-family: "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif";
-
-  line-height: 1.75;
+  font-size: 14px;
   color: #444;
   margin: 0;
 }
@@ -98,20 +95,18 @@
   align-items: center;
   justify-content: center;
 
-  margin-top: 6px;
+  margin-top: 2px;
   flex-shrink: 0;
 }
 
 .enquire-row.active .radio-circle {
   background: #d18b2c;
-  border-color: #d18b2c;
 }
 
 .enquire-row.active .radio-circle::after {
   content: "✔";
   color: #fff;
   font-size: 12px;
-  line-height: 1;
 }
 
 .enquire-btn {
@@ -119,16 +114,17 @@
   border: none;
   color: #fff;
 
-  padding: 11px 32px;
-  font-size: 14px;
-  border-radius: 28px;
+  padding: 12px 34px;
+  font-size: 15px;
+  border-radius: 30px;
 
   display: inline-flex;
   align-items: center;
   gap: 8px;
 
-  box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .enquire-btn:hover {
@@ -137,7 +133,7 @@
 
 .form-header {
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .back-btn {
@@ -145,51 +141,52 @@
   left: 0;
   top: 0;
 
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
 
   border-radius: 50%;
   border: 1px solid #c58a2c;
   background: transparent;
   color: #c58a2c;
 
-  font-size: 13px;
   cursor: pointer;
 }
 
+/* ✅ FORM */
 .enquire-form {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 16px;
 }
 
+/* ✅ BETTER 2-COLUMN LOOK */
 .form-row {
   display: flex;
-  gap: 18px;
+  gap: 20px;
 }
 
 .enquire-form input,
 .enquire-form select {
   width: 100%;
-  padding: 15px 12px;
+  padding: 12px 14px;
 
   border-radius: 10px;
   border: 1px solid #2e3f6e;
 
-  font-size: 13px;
-  background: #fff;
+  font-size: 14px;
 }
 
 .enquire-form input:focus,
 .enquire-form select:focus {
   border-color: #c58a2c;
+  outline: none;
 }
 
-
+/* CHECKBOX */
 .checkbox-group {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
 }
 
 .custom-checkbox {
@@ -209,7 +206,6 @@
   border: 2px solid #2e3f6e;
   border-radius: 4px;
   margin-top: 3px;
-  flex-shrink: 0;
 }
 
 .custom-checkbox input:checked + .checkmark {
@@ -228,44 +224,36 @@
 
 .label-text {
   font-size: 9px;
-  line-height: 1.5;
+  /* line-height: 1.5; */
   color: #333;
+  text-align: left;
   padding-top: 5px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.label-text b {
-  font-weight: 600;
-  text-decoration: underline;
-  font-family: "BuenosAires";
-  font-size: 9px;
-
-}
-
+/* SUBMIT */
 .submit-btn {
-  margin-top: 8px;
+  margin-top: 10px;
   align-self: center;
+
   background: #fff;
   border: 1px solid #2e3f6e;
-  padding: 9px 22px;
+
+  padding: 10px 25px;
   border-radius: 8px;
-  color: #20315B;
+
   font-size: 14px;
-  font-weight: 500;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   display: flex;
   gap: 12px;
   align-items: center;
+
   cursor: pointer;
-  transition: background 0.3s, color 0.3s;
+  transition: 0.3s;
 }
 
 .submit-divider {
   width: 1px;
   height: 18px;
   background-color: #2e3f6e;
-  display: inline-block;
-  transition: background 0.3s;
 }
 
 .submit-btn:hover {
@@ -273,115 +261,46 @@
   color: #fff;
 }
 
-.submit-icon{
-  padding-top: 1px;
-}
 .submit-btn:hover .submit-divider {
-  background-color: #fff; 
-}
-.enquire-btn svg{
-  padding-top: 2px;
+  background-color: #fff;
 }
 
-
-
+/* ------------------ MOBILE ------------------ */
 @media (max-width: 768px) {
 
   .enquire-section {
-    padding: 50px 15px;
+    padding: 40px 15px;
     background-size: 20%, 20%;
   }
 
   .enquire-card {
+    max-width: 100%;   /* ✅ fixed */
     width: 100%;
-    padding: 25px 20px;
-    border-radius: 12px;
-  }
-
-  .enquire-title {
-    font-size: 24px;
-    margin-bottom: 15px;
-  }
-
-  .enquire-content {
-    margin-bottom: 20px;
-  }
-
-  .enquire-row {
-    gap: 10px;
-    margin-bottom: 18px;
-  }
-
-  .enquire-row p {
-    font-size: 13.5px;
-    line-height: 1.6;
-  }
-
-  .radio-circle {
-    width: 18px;
-    height: 18px;
-  }
-
- 
-  .enquire-btn {
-    padding: 10px 24px;
-    font-size: 13px;
+    padding: 25px 18px;
   }
 
   .form-row {
-    flex-direction: column; 
-    gap: 10px;
+    flex-direction: column;  /* stack */
   }
 
   .enquire-form input,
   .enquire-form select {
-    padding: 12px 10px;
-    font-size: 13px;
-  }
-
-  .label-text {
-    font-size: 11px;
-    text-align: left;
+    padding: 13px 10px;
   }
 
   .submit-btn {
-    font-size: 12px;
-    padding: 8px 18px;
+    font-size: 13px;
   }
 }
 
-
-
+/* ------------------ TABLET ------------------ */
 @media (min-width: 769px) and (max-width: 1024px) {
 
-  .enquire-section {
-    padding: 60px 30px;
-    background-size: 15%, 15%;
-  }
-
   .enquire-card {
-    max-width: 600px;
-    padding: 30px 30px;
-  }
-
-  .enquire-title {
-    font-size: 28px;
-  }
-
-  .enquire-row p {
-    font-size: 14px;
+    max-width: 700px;
   }
 
   .form-row {
-    gap: 12px;
-  }
-
-  .enquire-form input,
-  .enquire-form select {
-    padding: 13px 12px;
-  }
-
-  .submit-btn {
-    font-size: 13px;
+    gap: 14px;
   }
 }

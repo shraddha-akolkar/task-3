@@ -1,6 +1,7 @@
 import React from "react";
 import "./Realty.css";
 import Logo from "../../assets/svg/Logo";
+import { motion } from "motion/react";
 
 const steps = [
   { step: "21000 +", desc: "HAPPY CUSTOMERS & ADDING MORE EVERY MONTH" },
@@ -15,39 +16,67 @@ const Realty = () => {
     <div className="realty-section section-space side-space" id="about">
       <div className="realty-card">
         <div className="realty-left">
-          <div className="heading-box">
-            <h4 className="heading">
-              About <br />
-              <span>VTP Realty</span>
-            </h4>
-          </div>
+          <motion.div
+            className="terms-top heading"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <div className="heading-box">
+              <h3 className="heading">
+                About
+                <br />
+                <span className="span">VTP Realty</span>
+              </h3>
+            </div>
+          </motion.div>
 
-          <p className="realty-desc">
-            VTP Realty is Pune’s leading real estate development brand. The
-            undisputed leaders that have not only set new benchmarks in business
-            numbers with stellar delivery, but also shattered records of all
-            established real estate players in a much shorter time. VTP Realty
-            is a well-known skyrocketing success story despite being a single
-            city developer. A brand that stands firmly on strong ethics and
-            exhibits a trailblazing thought-leadership for the industry. The
-            numerous awards winning brand prides itself in pioneering the MLA
-            (Maximum Livable Area) Homes.
-          </p>
+          <motion.div
+            className="terms-top heading"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <p className="realty-desc">
+              VTP Realty is Pune’s leading real estate development brand. The
+              undisputed leaders that have not only set new benchmarks in
+              business numbers with stellar delivery, but also shattered records
+              of all established real estate players in a much shorter time. VTP
+              Realty is a well-known skyrocketing success story despite being a
+              single city developer. A brand that stands firmly on strong ethics
+              and exhibits a trailblazing thought-leadership for the industry.
+              The numerous awards winning brand prides itself in pioneering the
+              MLA (Maximum Livable Area) Homes.
+            </p>
+          </motion.div>
         </div>
 
         <div className="realty-right">
-          <Logo />
+          <motion.div
+            initial={{ opacity: 0, x: 80 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            <Logo />
+          </motion.div>
         </div>
       </div>
 
-      <div className="bottom-bar">
-        {steps.map((item, index) => (
-          <div className="realty-step-item" key={index}>
-            <h3 className="realty-step-title">{item.step}</h3>
-            <p className="realty-step-desc">{item.desc}</p>
-          </div>
-        ))}
-      </div>
+      <motion.div
+        className="terms-top heading"
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        <div className="bottom-bar">
+          {steps.map((item, index) => (
+            <div className="realty-step-item" key={index}>
+              <h3 className="realty-step-title">{item.step}</h3>
+              <p className="realty-step-desc">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </motion.div>
     </div>
   );
 };

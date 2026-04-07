@@ -5,6 +5,8 @@ import Design from "../../assets/svg/Design";
 import Care from "../../assets/svg/Care";
 import Built from "../../assets/svg/Built";
 
+import { motion } from "motion/react";
+
 const cards = [
   {
     id: 1,
@@ -30,17 +32,38 @@ const Philosophy = () => {
   return (
     <div className="philosophy-section side-space">
       <div className="top-section">
-        <h2 className="top-heading  heading">
-          VTP Brand <span>Philosophy</span>
-        </h2>
+        <motion.div
+          className="terms-top heading"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          <h2 className="top-heading  heading">
+            VTP Brand <span className="span">Philosophy</span>
+          </h2>
+        </motion.div>
       </div>
-      <div class="philosophy-container">
-        {cards.map((cards) => (
-          <div class="philosophy-item" key={cards.id}>
-            <div className="icon-wrapper">{cards.icon}</div>
-            <h3>{cards.title}</h3>
-            <p>{cards.des}</p>
-          </div>
+
+      <div className="philosophy-container">
+        {cards.map((card, index) => (
+          <motion.div
+            className="philosophy-item"
+            key={card.id}
+            initial={
+              index === 0
+                ? { opacity: 0, x: -50 }
+                : index === 1
+                  ? { opacity: 0, y: 50 }
+                  : { opacity: 0, x: 50 }
+            }
+            whileInView={{ opacity: 1, x: 0, y: 0 }}
+            transition={{ duration: 1.2, ease: "easeOut" }} // 👈 smoother + slower
+            viewport={{ once: true }}
+          >
+            <div className="icon-wrapper">{card.icon}</div>
+            <h3>{card.title}</h3>
+            <p>{card.des}</p>
+          </motion.div>
         ))}
       </div>
     </div>

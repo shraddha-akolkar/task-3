@@ -6,11 +6,50 @@
 
 
 
+
 @font-face {
-  font-family: "BuenosAires";
-  src: url("./assets/fonts/AOKBuenosAiresRegular.ttf") format("truetype");
+  font-family: 'BuenosAires';
+  src: url('./assets/fonts/Buenos/BuenosAires-Thin.woff2') format('woff2');
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'Buenos Aires';
+  src: url('./assets/fonts/Buenos/BuenosAires-Light.woff2') format('woff2');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'BuenosAires';
+  src: url('./assets/fonts/Buenos/BuenosAires-Book.woff2') format('woff2');
   font-weight: 400;
 }
+
+@font-face {
+  font-family: 'BuenosAires';
+  src: url('./assets/fonts/Buenos/BuenosAires-Regular.woff2') format('woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'BuenosAires';
+  src: url('./assets/fonts/Buenos/BuenosAires-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'BuenosAires';
+  src: url('./assets/fonts/Buenos/BuenosAires-Bold.woff2') format('woff2');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'BuenosAires';
+  src: url('./assets/fonts/Buenos/BuenosAires-Black.woff2') format('woff2');
+  font-weight: 900;
+}
+
+
 
 /* @font-face {
   font-family: "BuenosAires";
@@ -51,12 +90,13 @@
 .heading{
   font-size: 36px;
   font-family: "BuenosAires";
-  font-weight: 400;
-
+  font-weight: 100;
+color: #151515cc;
 }
 
 .span{
         color: rgb(32, 49, 91);
+  font-weight: 400;
 
 }
 

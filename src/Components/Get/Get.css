@@ -39,10 +39,14 @@
   padding: 10px 15px;
   background: #fff;
   border: none;
-  font-size: 14px;
+  font-size: 13px;
   cursor: pointer;
-  color: #333;
+color: #20315B;
+;
   border-right: 1px solid #ccc;
+  font-weight: 400;
+  font-family: 'BuenosAires';
+
 }
 
 .get-btn:hover {
@@ -60,7 +64,7 @@
 }
 
 .get-icon-btn svg {
-  height: 20px;
+  height: 18px;
 }
 
 .get-icon-btn:hover {
@@ -129,14 +133,12 @@
   line-height: 1.6;
 }
 
-/* ================= MOBILE VIEW ================= */
 @media (max-width: 768px) {
 
   .get-section {
     padding: 50px 15px;
   }
 
-  /* STACK TITLE + BUTTON */
   .get-content {
     flex-direction: column;
     align-items: flex-start;
@@ -171,9 +173,8 @@
     height: 18px;
   }
 
-  /* CARD */
   .get-steps-bar {
-    grid-template-columns: repeat(2, 1fr); /* ✅ 2x2 */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 20px;
 
     padding: 20px 15px;
@@ -202,7 +203,6 @@
   }
 }
 
-/* ================= TABLET VIEW ================= */
 @media (min-width: 769px) and (max-width: 1024px) {
 
   .get-section {
@@ -218,9 +218,8 @@
     font-size: 26px;
   }
 
-  /* STEPS */
   .get-steps-bar {
-    grid-template-columns: repeat(2, 1fr); /* ✅ better than 4 */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 25px;
 
     padding: 25px;

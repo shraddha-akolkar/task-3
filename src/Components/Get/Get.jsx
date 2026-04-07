@@ -3,6 +3,8 @@ import "./Get.css";
 
 import Person from "../../assets/svg/Person";
 
+import { motion } from "motion/react";
+
 const steps = [
   { step: "STEP 1 – DAY 1", desc: "BOOKING WITH ₹1 + SDR*" },
   { step: "STEP 2 – DAY 2", desc: "LOAN SANCTION BY BANK*" },
@@ -15,10 +17,17 @@ const Get = () => {
     <div className="get-section side-space section-space" id="steps">
       <div className="get-content">
         <div className="get-title">
-          <h2 className="heading">
-            Get The <br />
-            <span>VTP Power Of One</span>
-          </h2>
+          <motion.div
+            className="terms-top heading"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <h2 className="heading">
+              Get The <br />
+              <span className="span">VTP Power Of One</span>
+            </h2>
+          </motion.div>
         </div>
 
         <div className="get-actions">
@@ -29,14 +38,20 @@ const Get = () => {
         </div>
       </div>
 
-      <div className="get-steps-bar">
-        {steps.map((item, index) => (
-          <div className="get-step-item" key={index}>
-            <h3 className="get-step-title">{item.step}</h3>
-            <p className="get-step-desc">{item.desc}</p>
-          </div>
-        ))}
-      </div>
+      <motion.div
+        initial={{ opacity: 0, x: 80 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6 }}
+      >
+        <div className="get-steps-bar">
+          {steps.map((item, index) => (
+            <div className="get-step-item" key={index}>
+              <h3 className="get-step-title">{item.step}</h3>
+              <p className="get-step-desc">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </motion.div>
     </div>
   );
 };

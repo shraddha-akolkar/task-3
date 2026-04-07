@@ -20,7 +20,7 @@
 }
 
 .realty-left {
-  flex: 0 0 80%;
+  flex: 0 0 70%;
 }
 
 
@@ -41,7 +41,7 @@
 
 .realty-sub {
   font-size: 20px;
-  color: #6b6b6b;
+  /* color: #6b6b6b; */
   margin-bottom: 5px;
 }
 
@@ -53,26 +53,27 @@
 }
 
 .realty-desc {
-  font-size: 14px;
+  font-size: 15px;
   /* line-height: 1.8; */
   color: #333;
-  /* padding-left: 12px; */
+  padding-left: 12px;
   margin: 0 0 16px;
   font-family: "BuenosAires";
+  font-weight: 400;
 
 }
 
 
 .realty-right {
-     flex: 0 0 20%;
+     flex: 0 0 30%;
   text-align: center;
   /* width: 20%; */
   text-align: center;
 }
 
 .realty-right svg {
-  width: 190px;
-  height: 220px;
+  width: 250px;
+  height: 230px;
   margin-top: -90px;
   margin-right: 5px;
 }
@@ -150,7 +151,7 @@
 }
 .realty-step-desc{
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 400;
   color: #1e2d5e;
 
   letter-spacing: 0.05em;
@@ -161,14 +162,12 @@
 
 
 
-/* ================= MOBILE VIEW ================= */
 @media (max-width: 768px) {
 
   .realty-section {
     padding: 50px 15px;
   }
 
-  /* TOP CARD */
   .realty-card {
     flex-direction: column;
     align-items: flex-start;
@@ -193,12 +192,10 @@
     padding-top: 10px;
   }
 
-  /* LOGO */
   .realty-right {
-    display: none; /* ✅ hide logo like screenshot */
+    display: none; 
   }
 
-  /* BOTTOM CARD (STATS) */
   .bottom-bar {
     grid-template-columns: repeat(2, 1fr); /* ✅ 2x2 */
     gap: 25px;
@@ -207,7 +204,6 @@
     border-radius: 15px;
   }
 
-  /* LAST ITEM FULL WIDTH */
   .realty-step-item:last-child {
     grid-column: span 2;
     text-align: center;
@@ -236,7 +232,6 @@
 
 
 
-/* ================= TABLET VIEW ================= */
 @media (min-width: 769px) and (max-width: 1024px) {
 
   .realty-section {
@@ -265,7 +260,6 @@
     margin-top: -40px;
   }
 
-  /* STATS GRID */
   .bottom-bar {
     grid-template-columns: repeat(3, 1fr); /* ✅ better than 5 */
     gap: 20px;
@@ -281,7 +275,6 @@
     font-size: 12.5px;
   }
 
-  /* LAST TWO CENTERED */
   .realty-step-item:nth-child(4),
   .realty-step-item:nth-child(5) {
     grid-column: span 1;

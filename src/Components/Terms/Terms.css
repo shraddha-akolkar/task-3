@@ -13,7 +13,10 @@
 
 }
 
+.terms-heading span{
+        color: rgb(32, 49, 91);
 
+}
 
 .terms-bottom{
     padding-left: 50px;
@@ -31,6 +34,10 @@
     /* padding-bottom: 10px; */
 }
 
+.terms-bottom li::marker {
+  color: #2c3e6b;   /* your theme color */
+  font-size: 23px;  /* increase size */
+}
 
 
 
@@ -40,7 +47,7 @@
 
 
 
-/* ================= MOBILE VIEW ================= */
+
 @media (max-width: 768px) {
 
   .terms-section {

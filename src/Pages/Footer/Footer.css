@@ -102,6 +102,10 @@
   cursor: pointer;
 }
 
+.footer__social svg :hover {
+  background: #c7865c; 
+}
+
 .footer__bottom {
   display: flex;
   justify-content: space-between;
