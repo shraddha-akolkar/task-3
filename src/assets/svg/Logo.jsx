@@ -1,5 +1,5 @@
 import * as React from "react";
-const SVGComponent = (props) => (
+const Logo = (props) => (
   <svg
     id="Layer_2"
     data-name="Layer 2"
@@ -125,4 +125,4 @@ const SVGComponent = (props) => (
     </g>
   </svg>
 );
-export default SVGComponent;
+export default Logo;

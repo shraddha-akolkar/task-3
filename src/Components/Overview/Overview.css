@@ -1,6 +1,7 @@
 .overview-section{
     /* background-color: cornflowerblue; */
     position: relative;
+    margin-bottom: 40px;
 }
 
 .img-section img{
@@ -8,7 +9,7 @@
 }
 
 
-.overview-section::before{
+/* .overview-section::before{
     content: "";
   position: absolute;
   top:0px; 
@@ -26,4 +27,4 @@
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 
   
-}
+} */

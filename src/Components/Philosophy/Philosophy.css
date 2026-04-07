@@ -66,3 +66,90 @@ width: 100%;
   font-family: "BuenosAires";
 text-align: justify;
 }
+
+
+
+/* ================= MOBILE VIEW ================= */
+@media (max-width: 768px) {
+
+  .philosophy-section {
+    padding: 50px 5px;
+  }
+
+  .top-section {
+    margin-left: 0;
+    text-align: center; /* ✅ center heading */
+  }
+
+  .top-heading {
+    font-size: 20px;
+  }
+
+  .philosophy-container {
+    flex-direction: column; /* ✅ stack */
+    align-items: center;
+    gap: 10px;
+  }
+
+  .philosophy-item {
+    text-align: center;
+    max-width: 360px;
+  }
+
+  .icon-wrapper {
+    margin: 0 auto; /* ✅ center icon */
+  }
+
+  .philosophy-item h3 {
+    font-size: 18px;
+    padding: 10px 0 6px;
+  }
+
+  .philosophy-item p {
+    font-size: 13.5px;
+    line-height: 1.6;
+    text-align: center; /* ✅ like screenshot */
+  }
+}
+
+
+/* ================= TABLET VIEW ================= */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .philosophy-section {
+    padding: 60px 30px;
+  }
+
+  .top-section {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .top-heading {
+    font-size: 26px;
+  }
+
+  .philosophy-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .philosophy-item {
+    width: 45%; /* ✅ 2 per row */
+    text-align: center;
+  }
+
+  .icon-wrapper {
+    margin: 0 auto;
+  }
+
+  .philosophy-item h3 {
+    font-size: 20px;
+  }
+
+  .philosophy-item p {
+    font-size: 14.5px;
+    text-align: center;
+  }
+}

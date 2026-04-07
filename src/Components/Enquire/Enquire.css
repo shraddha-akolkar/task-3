@@ -1,3 +1,381 @@
-.enquire-section{
-    background-color: blueviolet;
+/* ================= SECTION ================= */
+.enquire-section {
+  width: 100%;
+  min-height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #f5f3f2;
+
+  background-image: 
+    url("../../assets/images/enquire-left.webp"),
+    url("../../assets/images/enquire-right.webp");
+
+  background-repeat: no-repeat, no-repeat;
+  background-position: left bottom, right bottom;
+  background-size: 38%, 38%;
+
+  position: relative;
+  padding: 50px 0;
+}
+
+.enquire-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.6);
+  z-index: 1;
+}
+
+/* ================= CARD ================= */
+.enquire-card {
+  position: relative;
+  z-index: 2;
+
+  max-width: 520px;
+  width: 90%;
+
+  background: #fff;
+  padding: 35px 40px;
+
+  border-radius: 14px;
+  border: 1px solid #2e3f6e;
+
+  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+/* ================= TITLE ================= */
+.enquire-title {
+  font-size: 34px;
+  font-weight: 300;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.enquire-title span {
+  color: #2e3f6e;
+  font-weight: 600;
+}
+
+/* ================= OPTIONS ================= */
+.enquire-content {
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.enquire-row {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 22px;
+  cursor: pointer;
+  align-items: flex-start;
+}
+
+.enquire-row p {
+  font-size: 15px;
+  line-height: 1.75;
+  color: #444;
+  margin: 0;
+}
+
+.enquire-row b {
+  font-weight: 600;
+  color: #222;
+}
+
+.enquire-row b:last-child {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* ================= RADIO ================= */
+.radio-circle {
+  width: 22px;
+  height: 22px;
+  border: 2px solid #d18b2c;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 6px;
+  flex-shrink: 0;
+}
+
+.enquire-row.active .radio-circle {
+  background: #d18b2c;
+  border-color: #d18b2c;
+}
+
+.enquire-row.active .radio-circle::after {
+  content: "✔";
+  color: #fff;
+  font-size: 12px;
+  line-height: 1;
+}
+
+/* ================= BUTTON ================= */
+.enquire-btn {
+  background: linear-gradient(135deg, #b8791d, #e2a843);
+  border: none;
+  color: #fff;
+
+  padding: 11px 32px;
+  font-size: 14px;
+  border-radius: 28px;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+  cursor: pointer;
+}
+
+.enquire-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* ================= FORM ================= */
+.form-header {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+/* BACK BUTTON */
+.back-btn {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+  border: 1px solid #c58a2c;
+  background: transparent;
+  color: #c58a2c;
+
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* FORM */
+.enquire-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* ROW */
+.form-row {
+  display: flex;
+  gap: 18px;
+}
+
+/* INPUTS */
+.enquire-form input,
+.enquire-form select {
+  width: 100%;
+  padding: 15px 12px;
+
+  border-radius: 10px;
+  border: 1px solid #2e3f6e;
+
+  font-size: 13px;
+  background: #fff;
+}
+
+.enquire-form input:focus,
+.enquire-form select:focus {
+  border-color: #c58a2c;
+}
+
+
+/* ================= CHECKBOX ================= */
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.custom-checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.custom-checkbox input {
+  display: none;
+}
+
+.checkmark {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #2e3f6e;
+  border-radius: 4px;
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+.custom-checkbox input:checked + .checkmark {
+  background: #2e3f6e;
+  position: relative;
+}
+
+.custom-checkbox input:checked + .checkmark::after {
+  content: "✔";
+  color: #fff;
+  font-size: 11px;
+  position: absolute;
+  top: -2px;
+  left: 2px;
+}
+
+.label-text {
+  font-size: 9px;
+  line-height: 1.5;
+  color: #333;
+  padding-top: 5px;
+}
+
+.label-text b {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* ================= SUBMIT ================= */
+.submit-btn {
+  margin-top: 8px;
+  align-self: center;
+
+  background: #fff;
+  border: 1px solid #2e3f6e;
+
+  padding: 9px 22px;
+  border-radius: 8px;
+
+  font-size: 13px;
+
+  display: flex;
+  gap: 6px;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: #2e3f6e;
+  color: #fff;
+}
+
+
+
+/* ================= MOBILE VIEW ================= */
+@media (max-width: 768px) {
+
+  .enquire-section {
+    padding: 50px 15px;
+    background-size: 20%, 20%;
+  }
+
+  .enquire-card {
+    width: 100%;
+    padding: 25px 20px;
+    border-radius: 12px;
+  }
+
+  .enquire-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .enquire-content {
+    margin-bottom: 20px;
+  }
+
+  .enquire-row {
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+
+  .enquire-row p {
+    font-size: 13.5px;
+    line-height: 1.6;
+  }
+
+  .radio-circle {
+    width: 18px;
+    height: 18px;
+  }
+
+  /* BUTTON */
+  .enquire-btn {
+    padding: 10px 24px;
+    font-size: 13px;
+  }
+
+  /* FORM */
+  .form-row {
+    flex-direction: column; /* ✅ stack inputs */
+    gap: 10px;
+  }
+
+  .enquire-form input,
+  .enquire-form select {
+    padding: 12px 10px;
+    font-size: 13px;
+  }
+
+  .label-text {
+    font-size: 11px;
+    text-align: left;
+  }
+
+  .submit-btn {
+    font-size: 12px;
+    padding: 8px 18px;
+  }
+}
+
+
+
+/* ================= TABLET VIEW ================= */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .enquire-section {
+    padding: 60px 30px;
+    background-size: 15%, 15%;
+  }
+
+  .enquire-card {
+    max-width: 600px;
+    padding: 30px 30px;
+  }
+
+  .enquire-title {
+    font-size: 28px;
+  }
+
+  .enquire-row p {
+    font-size: 14px;
+  }
+
+  .form-row {
+    gap: 12px;
+  }
+
+  .enquire-form input,
+  .enquire-form select {
+    padding: 13px 12px;
+  }
+
+  .submit-btn {
+    font-size: 13px;
+  }
 }

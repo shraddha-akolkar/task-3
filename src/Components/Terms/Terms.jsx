@@ -57,12 +57,14 @@ const Terms = () => {
             In case of cancellation for any reason, applicable cancellation
             charges will apply and will be borne by the customer.
           </li>
-          liEach financial institution's scheme has its own specific terms and
-          conditions. Customers are required to consult with the bank
-          representative for a detailed understanding of the applicable terms.
-          Customers are advised to seek complete disclosure of all relevant
-          terms and conditions from the financial institution representative
-          prior to making any financial commitments or decisions.
+          <li>
+            liEach financial institution's scheme has its own specific terms and
+            conditions. Customers are required to consult with the bank
+            representative for a detailed understanding of the applicable terms.
+            Customers are advised to seek complete disclosure of all relevant
+            terms and conditions from the financial institution representative
+            prior to making any financial commitments or decisions.
+          </li>
         </ul>
       </div>
     </div>

@@ -10,10 +10,12 @@ import Realty from "../Components/Realty/Realty";
 import Philosophy from "../Components/Philosophy/Philosophy";
 import Enquire from "../Components/Enquire/Enquire";
 import Dream from "../Components/Dream/Dream";
+import Navbar from "./Navbar/Navbar";
 
 const Home = () => {
   return (
     <div>
+      <Navbar />
       <Banner />
       <Overview />
       <Slider />

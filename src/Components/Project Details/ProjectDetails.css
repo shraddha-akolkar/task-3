@@ -1,0 +1,383 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap');
+
+
+
+.pd_section {
+  background: var(--pd-bg);
+  font-family: 'Jost', sans-serif;
+  padding: 0 0 40px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+.pd_topbar {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  background: var(--pd-bg);
+  border-bottom: 1px solid var(--pd-border);
+  padding: 0 32px;
+  position: relative;
+  min-height: 92px;
+}
+
+
+.pd_logo_card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--pd-white);
+  border-radius: 14px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
+  padding: 14px 24px;
+  margin: 16px 24px 16px 0;
+  min-width: 170px;
+  max-width: 210px;
+  flex-shrink: 0;
+}
+
+.pd_logo_img {
+  width: 100%;
+  height: 52px;
+  object-fit: contain;
+}
+
+/* ── Tabs ── */
+.pd_tabs {
+  display: flex;
+  align-items: flex-end;
+  flex: 1;
+  gap: 0;
+  padding-bottom: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.pd_tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.pd_tab_btn {
+  position: relative;
+  background: none;
+  border: none;
+  padding: 0 28px 18px;
+  cursor: pointer;
+  font-family: 'Jost', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: var(--pd-mid);
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.2s ease;
+}
+
+.pd_tab_btn:hover {
+  color: var(--pd-navy);
+}
+
+.pd_tab_btn.active {
+  color: var(--pd-navy);
+  font-weight: 700;
+  background: rgba(28, 42, 74, 0.04);
+  border-radius: 8px 8px 0 0;
+}
+
+.pd_tab_underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--pd-tab-active-line);
+  border-radius: 2px 2px 0 0;
+}
+
+
+.pd_download_btn {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  background: var(--pd-white);
+  border: 1.5px solid var(--pd-navy);
+  border-radius: 8px;
+  padding: 0;
+  cursor: pointer;
+  font-family: 'Jost', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: var(--pd-navy);
+  align-self: center;
+  overflow: hidden;
+  transition: background 0.2s ease, color 0.2s ease;
+  flex-shrink: 0;
+  margin-left: 20px;
+}
+
+.pd_download_btn > span:first-child {
+  padding: 10px 16px;
+}
+
+.pd_download_btn:hover {
+  background: var(--pd-navy);
+  color: var(--pd-white);
+}
+
+.pd_download_btn:hover svg path {
+  fill: var(--pd-white);
+}
+
+.pd_btn_sep {
+  width: 1px;
+  height: 100%;
+  background: var(--pd-navy);
+  align-self: stretch;
+  flex-shrink: 0;
+  display: inline-block;
+}
+
+.pd_download_btn svg {
+  margin: 0 12px;
+}
+
+.pd_download_btn svg path {
+  fill: var(--pd-navy);
+  transition: fill 0.2s ease;
+}
+
+
+.pd_tab_content {
+  padding: 36px 32px 0;
+}
+
+
+.pd_table_wrapper {
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.08);
+  background: var(--pd-white);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.pd_unit_table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.pd_unit_table thead tr {
+  background: transparent;
+}
+
+.pd_unit_table thead th {
+  padding: 0;
+  border: none;
+  vertical-align: top;
+  position: relative;
+}
+
+.th_pill {
+  background: var(--pd-pill-bg);
+  font-family: 'Jost', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--pd-navy);
+  letter-spacing: 0.04em;
+  text-align: center;
+  padding: 18px 24px;
+  border-radius: 14px 14px 0 0;
+  margin: 0 2px;
+  position: relative;
+  z-index: 1;
+}
+
+.th_left  .th_pill { border-radius: 14px 14px 0 0; }
+.th_right .th_pill { border-radius: 14px 14px 0 0; }
+
+.pd_unit_table thead::after {
+  content: "";
+  display: table-row;
+  height: 12px;
+  background: var(--pd-header-gradient);
+}
+
+.pd_unit_table thead tr:last-child td,
+.pd_unit_table thead tr:last-child th {
+  padding: 0;
+}
+
+.pd_unit_table thead {
+  position: relative;
+}
+
+.pd_table_band {
+  background: var(--pd-header-gradient);
+  height: 16px;
+  width: 100%;
+  display: block;
+}
+
+.pd_band_row td {
+  background: var(--pd-header-gradient);
+  height: 16px;
+  padding: 0;
+  border: none;
+}
+
+
+.pd_row {
+  border-bottom: 1px solid var(--pd-row-border);
+  transition: background 0.15s ease;
+}
+
+.pd_row:last-child {
+  border-bottom: none;
+}
+
+.pd_row:hover {
+  background: #fafafa;
+}
+
+.td_config,
+.td_area,
+.td_cost {
+  padding: 22px 24px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--pd-navy);
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+.td_config {
+  font-weight: 600;
+  border-right: 1px solid var(--pd-row-border);
+}
+
+.td_area {
+  border-right: 1px solid var(--pd-row-border);
+  color: var(--pd-mid);
+  font-weight: 400;
+}
+
+.pd_cost_btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'Jost', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--pd-navy);
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.pd_cost_btn:hover {
+  background: rgba(28, 42, 74, 0.06);
+}
+
+.pd_cost_btn svg {
+  color: var(--pd-cost-text);
+  flex-shrink: 0;
+}
+
+
+.pd_placeholder {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--pd-mid);
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+}
+
+
+.pd_mobile_download {
+  display: none;
+  justify-content: center;
+  margin-top: 28px;
+  padding: 0 32px;
+}
+
+
+@media (max-width: 900px) {
+  .pd_topbar {
+    flex-wrap: wrap;
+    padding: 12px 16px;
+    gap: 12px;
+    min-height: unset;
+  }
+
+  .pd_logo_card {
+    margin: 0;
+    min-width: 130px;
+    max-width: 160px;
+    padding: 10px 16px;
+  }
+
+  .pd_logo_img {
+    height: 40px;
+  }
+
+  .pd_tabs {
+    order: 3;
+    width: 100%;
+    border-top: 1px solid var(--pd-border);
+    padding-top: 4px;
+  }
+
+  .pd_tab_btn {
+    padding: 10px 14px 12px;
+    font-size: 11px;
+  }
+
+  .pd_download_btn {
+    display: none; 
+  }
+
+  .pd_mobile_download {
+    display: flex;
+  }
+
+  .pd_tab_content {
+    padding: 20px 12px 0;
+  }
+
+  .td_config,
+  .td_area,
+  .td_cost {
+    padding: 16px 12px;
+    font-size: 13px;
+  }
+
+  .th_pill {
+    font-size: 12px;
+    padding: 14px 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .pd_tab_btn {
+    padding: 8px 10px 10px;
+    font-size: 10px;
+    letter-spacing: 0.06em;
+  }
+
+  .pd_cost_btn {
+    font-size: 11px;
+    gap: 6px;
+  }
+}

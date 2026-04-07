@@ -1,3 +1,289 @@
-.realty-section{
-    background-color: darkkhaki;
+.realty-section {
+  background-image: url("../../assets/images/realty_bg.webp");
+  background-size: cover;
+  background-position: center;
+  /* padding: 60px 0; */
+}
+
+
+.realty-card {
+  display: flex;
+  align-items: center;
+  gap: 20px; 
+
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px 45px;
+  margin-bottom: 30px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.realty-left {
+  flex: 0 0 80%;
+}
+
+
+.heading-box {
+  border-left: 2px solid #1e2d5e; 
+  padding-left: 15px;
+  margin-bottom: 15px;
+}
+
+/* remove old margin */
+.realty-left h4 {
+  margin: 0;
+}
+
+/* heading style */
+
+
+
+.realty-sub {
+  font-size: 20px;
+  color: #6b6b6b;
+  margin-bottom: 5px;
+}
+
+.realty-title {
+  font-size: 38px;
+  color: #1e2d5e;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.realty-desc {
+  font-size: 14px;
+  /* line-height: 1.8; */
+  color: #333;
+  /* padding-left: 12px; */
+  margin: 0 0 16px;
+  font-family: "BuenosAires";
+
+}
+
+
+.realty-right {
+     flex: 0 0 20%;
+  text-align: center;
+  /* width: 20%; */
+  text-align: center;
+}
+
+.realty-right svg {
+  width: 190px;
+  height: 220px;
+  margin-top: -90px;
+  margin-right: 5px;
+}
+
+
+
+.bottom-bar {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+
+  padding: 25px 35px;
+
+  background: #fff;
+  background-image: url("../../assets/images/get_bg.webp");
+  background-size: cover;
+  background-position: center;
+
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* .get-steps-bar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+
+  padding: 25px 30px;
+  
+  background: #fff;
+  background-image: url("../../assets/images/get_bg.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); 
+} */
+
+.realty-step-item {
+  /* padding: 10px 12px; */
+  position: relative;
+  /* margin-left: 20px;
+  margin-right: 7px; */
+}
+
+
+
+.realty-step-title {
+  font-size: 26px;
+  font-weight: 400;
+  color: #1e2d5e;
+
+  margin-bottom: 10px;
+  letter-spacing: 0.02em;
+  font-family: "BuenosAires";
+
+  text-transform: uppercase;
+
+  position: relative;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+
+.realty-step-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 100%; 
+  height: 2px;
+  background-color: #1e2d5e;
+}
+.realty-step-desc{
+  font-size: 13px;
+  font-weight: 700;
+  color: #1e2d5e;
+
+  letter-spacing: 0.05em;
+  font-family: "BuenosAires";
+
+  line-height: 1.6;
+}
+
+
+
+/* ================= MOBILE VIEW ================= */
+@media (max-width: 768px) {
+
+  .realty-section {
+    padding: 50px 15px;
+  }
+
+  /* TOP CARD */
+  .realty-card {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  .realty-left {
+    width: 100%;
+  }
+
+  .heading-box {
+    padding-left: 12px;
+    margin-bottom: 10px;
+  }
+
+  .realty-desc {
+    font-size: 11.5px;
+    line-height: 1.6;
+    padding-top: 10px;
+  }
+
+  /* LOGO */
+  .realty-right {
+    display: none; /* ✅ hide logo like screenshot */
+  }
+
+  /* BOTTOM CARD (STATS) */
+  .bottom-bar {
+    grid-template-columns: repeat(2, 1fr); /* ✅ 2x2 */
+    gap: 25px;
+
+    padding: 20px 15px;
+    border-radius: 15px;
+  }
+
+  /* LAST ITEM FULL WIDTH */
+  .realty-step-item:last-child {
+    grid-column: span 2;
+    text-align: center;
+  }
+
+  .realty-step-item {
+    text-align: center;
+  }
+
+  .realty-step-title {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .realty-step-title::after {
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .realty-step-desc {
+    font-size: 11.5px;
+    line-height: 1.5;
+  }
+}
+
+
+
+/* ================= TABLET VIEW ================= */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .realty-section {
+    padding: 60px 30px;
+  }
+
+  .realty-card {
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+
+    padding: 25px 30px;
+  }
+
+  .realty-left {
+    flex: 0 0 70%;
+  }
+
+  .realty-right {
+    flex: 0 0 30%;
+  }
+
+  .realty-right svg {
+    width: 140px;
+    height: 160px;
+    margin-top: -40px;
+  }
+
+  /* STATS GRID */
+  .bottom-bar {
+    grid-template-columns: repeat(3, 1fr); /* ✅ better than 5 */
+    gap: 20px;
+
+    padding: 25px;
+  }
+
+  .realty-step-title {
+    font-size: 22px;
+  }
+
+  .realty-step-desc {
+    font-size: 12.5px;
+  }
+
+  /* LAST TWO CENTERED */
+  .realty-step-item:nth-child(4),
+  .realty-step-item:nth-child(5) {
+    grid-column: span 1;
+  }
 }

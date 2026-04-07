@@ -12,6 +12,31 @@
   font-weight: 400;
 }
 
+/* @font-face {
+  font-family: "BuenosAires";
+  src: url("./assets/fonts/AOKBuenosAiresBold.ttf") format("truetype");
+  font-weight: 700;
+} */
+
+/* 
+@font-face {
+  font-family: "BuenosAires";
+  src: url("./assets/fonts/AOKBuenosAiresRegular.ttf") format("truetype");
+  font-weight: 300;
+} */
+
+/* @font-face {
+  font-family: "BuenosAires";
+  src: url("./assets/fonts/AOKBuenosAiresRegular.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "BuenosAires";
+  src: url("./assets/fonts/AOKBuenosAiresRegular.ttf") format("truetype");
+  font-weight: 700;
+} */
+
 
 .section-space{
   padding-top: 75px;

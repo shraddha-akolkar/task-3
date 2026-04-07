@@ -1,27 +1,92 @@
-.dream-section{
-    background-color: #ebe9e5e5;
+.dream-section {
+  background-color: #ebe9e5e5;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #000000;
+}
+
+.top-header {
+  padding-bottom: 16px;
+}
+
+.top-header h3 {
+  font-family: "BuenosAires";
+  font-size: 14px;
+}
+
+.bottom-section p {
+  padding-bottom: 10px;
+  font-family: "BuenosAires";
+  font-size: 13px;
+}
+
+.bottom-section p:nth-child(3) {
+  padding-bottom: 0;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .dream-section {
+    padding: 50px 15px; /* ✅ clean spacing */
+    background-color: #ebe9e5;
+  }
+
+  .top-header {
+     padding-bottom: 18px;
+    max-width: 250px;
+
+    margin: 0 auto; /* ✅ THIS FIXES CENTERING */
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-color: #000000;
+  }
 
+  .top-header h3 {
+    font-size: 16px;
+    font-weight: 600; /* ✅ bold like screenshot */
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .bottom-section {
+    display: flex;
+    flex-direction: column;
+    gap: 14px; /* ✅ equal spacing instead of padding */
+  }
+
+  .bottom-section p {
+    font-size: 12.5px;
+    line-height: 1.7;
+    text-align: center; /* ✅ center like screenshot */
+    padding-bottom: 0; /* ❌ remove old spacing */
+  }
+
+ 
 }
 
-.top-header{
-    padding-bottom: 16px;
-}
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
 
-.top-header h3{
-  font-family: "BuenosAires";
-font-size: 14px;
-}
+  .dream-section {
+    padding: 40px 30px;
+  }
 
-.bottom-section p{
-    padding-bottom: 10px;
-  font-family: "BuenosAires";
-font-size: 13px;
-}
+  .top-header h3 {
+    font-size: 18px;
+    font-weight: 600;
+  }
 
-.bottom-section p:nth-child(3){
-    padding-bottom: 0;
+  .bottom-section {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .bottom-section p {
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: center;
+  }
 }
