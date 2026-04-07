@@ -1,6 +1,5 @@
 import React from "react";
 import "./Construction.css";
-import youtube from "../../../../task2-repeat/src/assets/images/youtube.png";
 import { motion } from "motion/react";
 
 export default function Construction() {
@@ -25,7 +24,12 @@ export default function Construction() {
       >
         <div className="video-card">
           <div className="video-inner">
-            <img src={youtube} alt="Construction Update" />
+            <img
+              src={
+                "https://img.freepik.com/free-photo/hand-word-chance-business_1150-18162.jpg?semt=ais_hybrid&w=740&q=80"
+              }
+              alt="Construction Update"
+            />
           </div>
         </div>
       </motion.div>

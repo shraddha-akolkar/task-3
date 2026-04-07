@@ -4,20 +4,20 @@ import star from "../../assets/images/star.png";
 import ProjectDetails from "../Project Details/ProjectDetails";
 
 const projects = [
-  "VTP Aurelia - Kharadi, Pune",
-  "Monarque by VTP Luxe - Hinjawadi, Pune",
-  "VTP VOLARE - Hinjawadi, Pune",
-  "EARTH 1 BY VTP LUXE - Mahalunge, Pune",
-  "CIELO by VTP Luxe - Bavdhan Pune",
-  "FLAMANTE BY VTP LUXE - Kharadi, Pune",
-  "VTP DOLCE VITA - New Kharadi, Pune",
-  "VTP EUPHORIA - New Kharadi, Pune",
-  "VTP Codename Vibrance - Baner Sus, Pune",
-  "Altamira by VTP Luxe - Kharadi, Pune",
+  { name: "VTP Aurelia - Kharadi, Pune", id: 1 },
+  { name: "Monarque by VTP Luxe - Hinjawadi, Pune", id: 2 },
+  { name: "VTP VOLARE - Hinjawadi, Pune", id: 3 },
+  { name: "EARTH 1 BY VTP LUXE - Mahalunge, Pune", id: 4 },
+  { name: "CIELO by VTP Luxe - Bavdhan Pune", id: 5 },
+  { name: "FLAMANTE BY VTP LUXE - Kharadi, Pune", id: 6 },
+  { name: "VTP DOLCE VITA - New Kharadi, Pune", id: 7 },
+  { name: "VTP EUPHORIA - New Kharadi, Pune", id: 8 },
+  { name: "VTP Codename Vibrance - Baner Sus, Pune", id: 9 },
+  { name: "Altamira by VTP Luxe - Kharadi, Pune", id: 10 },
 ];
 
 const ProjectSection = () => {
-  const [selected, setSelected] = useState("");
+  const [selected, setSelected] = useState(null);
   const [open, setOpen] = useState(false);
 
   return (
@@ -45,7 +45,9 @@ const ProjectSection = () => {
             onClick={() => setOpen(!open)}
           >
             <span className={!selected ? "placeholder" : ""}>
-              {selected || "SELECT A PROJECT"}
+              {selected
+                ? projects.find((p) => p.id === selected)?.name
+                : "SELECT A PROJECT"}
             </span>{" "}
             <div className={`arrow ${open ? "rotated" : ""}`}></div>
           </div>
@@ -56,15 +58,15 @@ const ProjectSection = () => {
 
               {projects.map((p) => (
                 <li
-                  key={p}
-                  className={p === selected ? "active" : ""}
+                  key={p.id}
+                  className={p.id === selected ? "active" : ""}
                   onClick={(e) => {
                     e.stopPropagation();
-                    setSelected(p);
+                    setSelected(p.id);
                     setOpen(false);
                   }}
                 >
-                  {p}
+                  {p.name}
                 </li>
               ))}
             </ul>
@@ -94,7 +96,7 @@ const ProjectSection = () => {
         </div>
       </section>
       {/* Pass selected project */}
-      {selected && <ProjectDetails projectName={"proj_001"} />}{" "}
+      {selected && <ProjectDetails Project_Id={"proj_001"} />}{" "}
     </>
   );
 };
