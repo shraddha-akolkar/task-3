@@ -12,7 +12,7 @@ const steps = [
 
 const Realty = () => {
   return (
-    <div className="realty-section section-space side-space">
+    <div className="realty-section section-space side-space" id="about">
       <div className="realty-card">
         <div className="realty-left">
           <div className="heading-box">

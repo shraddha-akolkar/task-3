@@ -2,7 +2,7 @@ import React from "react";
 import "./Terms.css";
 const Terms = () => {
   return (
-    <div className="terms-section section-space side-space">
+    <div className="terms-section section-space side-space" id="terms">
       <div className="terms-top heading">
         <h3 className="terms-heading heading">
           Terms and <br />

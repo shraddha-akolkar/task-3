@@ -49,13 +49,13 @@
 }
 
 .heading{
-  font-size: 34px;
+  font-size: 36px;
   font-family: "BuenosAires";
   font-weight: 400;
 
 }
 
-span{
+.span{
         color: rgb(32, 49, 91);
 
 }

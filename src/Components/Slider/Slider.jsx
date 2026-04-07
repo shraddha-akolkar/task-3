@@ -8,7 +8,7 @@ import img5 from "../../assets/images/5.webp";
 
 export default function ImageMarquee() {
   const images = [img1, img2, img3, img5];
-
+  const doubled = [...images, ...images];
   return (
     <div className="slider-section section-space side-space">
       <div className="slider-space">

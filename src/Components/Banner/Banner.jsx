@@ -1,7 +1,6 @@
 import "./Banner.css";
 import Video from "../../assets/videos/Banner-Desk-com.mp4";
-import img from "../../assets/images/grass.webp";
-// hjhkj
+import Logo from "../../assets/svg/Logo";
 const Banner = () => {
   return (
     <div className="video-section">
@@ -9,8 +8,9 @@ const Banner = () => {
         <video autoPlay muted loop playsInline>
           <source src={Video} type="video/mp4" />
         </video>
-        <div></div>
-        <img src={img} alt="img" srcset="" />
+        <div className="logo-icon">
+          <Logo />
+        </div>
       </div>
     </div>
   );

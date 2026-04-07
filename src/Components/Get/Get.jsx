@@ -12,7 +12,7 @@ const steps = [
 
 const Get = () => {
   return (
-    <div className="get-section side-space section-space">
+    <div className="get-section side-space section-space" id="steps">
       <div className="get-content">
         <div className="get-title">
           <h2 className="heading">

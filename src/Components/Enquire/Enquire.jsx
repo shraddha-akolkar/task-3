@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Enquire.css";
-
+import Arrow from "../../assets/svg/Arrow";
+import Submit from "../../assets/svg/Submit";
 const Enquire = () => {
   const [selected, setSelected] = useState(null);
   const [showForm, setShowForm] = useState(false);
@@ -14,16 +15,15 @@ const Enquire = () => {
   };
 
   return (
-    <section className="enquire-section ">
+    <section className="enquire-section " id="enquire">
       <div className="enquire-card">
         {!showForm ? (
           <>
-            <h1 className="enquire-title">
+            <h1 className="enquire-title heading">
               Enquire <span>Now</span>
             </h1>
 
             <div className="enquire-content">
-              {/* OPTION 1 */}
               <div
                 className={`enquire-row ${selected === 1 ? "active" : ""}`}
                 onClick={() => setSelected(1)}
@@ -39,7 +39,6 @@ const Enquire = () => {
                 </p>
               </div>
 
-              {/* OPTION 2 */}
               <div
                 className={`enquire-row ${selected === 2 ? "active" : ""}`}
                 onClick={() => setSelected(2)}
@@ -52,18 +51,20 @@ const Enquire = () => {
             </div>
 
             <button className="enquire-btn" onClick={handleNext}>
-              Next <span>→</span>
+              Next
+              <span>
+                <Arrow color="white" />
+              </span>
             </button>
           </>
         ) : (
           <>
-            {/* FORM */}
             <div className="form-header">
               <button className="back-btn" onClick={() => setShowForm(false)}>
                 ←
               </button>
 
-              <h1 className="enquire-title">
+              <h1 className="enquire-title heading">
                 Enquire <span>Now</span>
               </h1>
             </div>
@@ -84,7 +85,31 @@ const Enquire = () => {
               </div>
 
               <select>
-                <option>Select a Project*</option>
+                <option value="">Select a Project*</option>
+                <option value="vtp-aurelia">VTP AURELIA - Kharadi, Pune</option>
+                <option value="vtp-vibrance">
+                  VTP CODENAME VIBRANCE - Baner Sus, Pune
+                </option>
+                <option value="altamira">
+                  ALTAMIRA BY VTP LUXE - Kharadi, Pune
+                </option>
+                <option value="monarque">
+                  MONARQUE BY VTP LUXE - Hinjawadi, Pune
+                </option>
+                <option value="vtp-volare">VTP VOLARE - Hinjawadi, Pune</option>
+                <option value="earth1">
+                  EARTH 1 BY VTP LUXE - Mahalunge, Pune
+                </option>
+                <option value="cielo">CIELO BY VTP LUXE - Bavdhan, Pune</option>
+                <option value="flamante">
+                  FLAMANTE BY VTP LUXE - Kharadi, Pune
+                </option>
+                <option value="dolce-vita">
+                  VTP DOLCE VITA - New Kharadi, Pune
+                </option>
+                <option value="euphoria">
+                  VTP EUPHORIA - New Kharadi, Pune
+                </option>
               </select>
 
               <div className="checkbox-group">
@@ -108,7 +133,11 @@ const Enquire = () => {
               </div>
 
               <button className="submit-btn">
-                Submit <span>→</span>
+                Submit
+                <span className="submit-divider" />
+                <span className="submit-icon">
+                  <Submit />
+                </span>
               </button>
             </form>
           </>

@@ -1,98 +1,67 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Project.css";
-import ProjectDetails from "../Project Details/ProjectDetails";
 
-import building from "../../assets/images/project_building.webp";
-import badge from "../../assets/images/badge.png";
-import bg_one from "../../assets/images/project_one.webp";
-const projects = [
-  "VTP Aurelia - Kharadi, Pune",
-  "Monarque by VTP Luxe - Hinjawadi, Pune",
-  "VTP VOLARE - Hinjawadi, Pune",
-  "EARTH 1 BY VTP LUXE - Mahalunge, Pune",
-  "CIELO by VTP Luxe - Bavdhan Pune",
-  "FLAMANTE BY VTP LUXE - Kharadi, Pune",
-  "VTP DOLCE VITA - New Kharadi, Pune",
-  "VTP EUPHORIA - New Kharadi, Pune",
-  "VTP Codename Vibrance - Baner Sus, Pune",
-  "Altamira by VTP Luxe - Kharadi, Pune",
-];
+// Assuming your images are in the public/assets folder
+import projectOne from "../../assets/images/project_one.webp";
+import buildingBg from "../../assets/images/project_building.webp";
+import badgeImg from "../../assets/images/badge.png";
 
-const Project = () => {
-  const [selected, setSelected] = useState(projects[0]);
-  const [open, setOpen] = useState(false);
-
+const Hero = () => {
   return (
-    <>
-      <section className="project_select">
-        <img src={bg_one} alt="bg" className="ghost_one" />
+    <section className="hero-container">
+      {/* Background Layer 1: Large "1" */}
+      <img src={projectOne} alt="" className="bg-number-one" />
 
-        <div className="br_badge">
-          <img src={badge} alt="badge" className="badge_img" />
+      {/* Background Layer 2: Building Outlines */}
+      <div className="building-wrapper">
+        <img src={buildingBg} alt="" className="bg-buildings" />
+      </div>
+
+      {/* Floating Badge (Top Right) */}
+      <div className="explore-badge">
+        <img src={badgeImg} alt="" className="badge-shape" />
+        <div className="badge-text">
+          <span>EXPLORE</span>
+          <strong>PROJECTS</strong>
+        </div>
+      </div>
+
+      {/* Main Content Area */}
+      <div className="content-wrapper">
+        {/* Left Info Card */}
+        <div className="info-card">
+          <p className="subtitle">1 Choice, Infinite Possibilities</p>
+          <h1>
+            With VTP <br /> Just 1 Is Enough.
+          </h1>
         </div>
 
-        <div className="center_content">
-          <div className="pro_dropdown_wrapper">
-            <div
-              className={`pro_dropdown_trigger ${open ? "open" : ""}`}
-              onClick={() => setOpen(!open)}
-            >
-              <span className="dropdown_label">{selected}</span>
-              <span
-                className={`dropdown_arrow ${open ? "rotated" : ""}`}
-              ></span>
+        {/* Central UI Elements */}
+        <div className="center-content">
+          <div className="search-bar">
+            <span>SELECT A PROJECT</span>
+            <div className="dropdown-icon">
+              <svg viewBox="0 0 24 24" width="24" height="24">
+                <path
+                  fill="currentColor"
+                  d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+                />
+              </svg>
             </div>
-
-            {open && (
-              <ul className="pro_dropdown_list">
-                {projects.map((p) => (
-                  <li
-                    key={p}
-                    className={`pro_dropdown_item ${p === selected ? "active" : ""}`}
-                    onClick={() => {
-                      setSelected(p);
-                      setOpen(false);
-                    }}
-                  >
-                    {p}
-                  </li>
-                ))}
-              </ul>
-            )}
           </div>
 
-          <div className="project_select_desc">
-            <p className="tagline_line">Homeownership Made Easy</p>
-            <p className="tagline_line">Lowest Down Payment Ever!</p>
-
-            <div className="over_separator">
-              <span className="sep_line" />
-              <span className="sep_star">✦</span>
-              <span className="sep_line" />
+          <div className="hero-headlines">
+            <h2>Homeownership Made Easy</h2>
+            <h3>Lowest Down Payment Ever!</h3>
+            <div className="divider">
+              <span className="star-icon">✧</span>
             </div>
-
-            <p className="over_capsuler">
-              <strong>#THEPOWER</strong>OF<strong>ONE</strong>
-            </p>
+            <p className="hashtag">#THEPOWEROFONE</p>
           </div>
         </div>
-
-        <div className="pro_sel_card">
-          <p className="card_sub">1 Choice, Infinite Possibilities</p>
-          <p className="card_title">
-            With VTP <br />
-            Just 1 Is Enough.
-          </p>
-        </div>
-
-        <div className="pro_build">
-          <img src={building} alt="building" />
-        </div>
-      </section>
-
-      <ProjectDetails projectName={selected} />
-    </>
+      </div>
+    </section>
   );
 };
 
-export default Project;
+export default Hero;

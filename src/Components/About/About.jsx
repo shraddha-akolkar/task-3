@@ -3,7 +3,7 @@ import "./About.css";
 
 const About = () => {
   return (
-    <div className="about-section side-space">
+    <div className="about-section side-space" id="About">
       <div className="about-box">
         <p className="about-text">
           We at VTP Realty believe that a home is more than just four walls —
