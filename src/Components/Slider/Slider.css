@@ -32,7 +32,6 @@
   }
 }
 
-/* 🔥 MOBILE ONLY */
 @media (max-width: 768px) {
   .slider-section {
     padding-top: 0px;
@@ -41,7 +40,7 @@
 
   .slider-content {
     gap: 20px;
-    animation-duration: 14s; /* slightly faster for mobile */
+    animation-duration: 14s; 
   }
 
   .slider-content img {
@@ -50,7 +49,6 @@
   }
 }
 
-/* 🔥 SMALL MOBILE */
 @media (max-width: 480px) {
   .slider-content img {
     width: 70px;

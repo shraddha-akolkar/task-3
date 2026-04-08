@@ -2,11 +2,10 @@
   position: relative;
   height: 100vh;
   background: #e6e7e5;
-  overflow: visible; /* ✅ FIXED */
+  overflow: visible; 
   font-family: "Montserrat", sans-serif;
 }
 
-/* BIG 1 BACKGROUND */
 .bg-one {
   position: absolute;
   left: 0;
@@ -20,7 +19,6 @@
   z-index: 0;
 }
 
-/* BUILDINGS */
 .bg-buildings {
   position: absolute;
   bottom: 0;
@@ -44,7 +42,6 @@
   background-size: contain;
 }
 
-/* BADGE */
 .badge-wrapper {
   position: absolute;
   top: 0;
@@ -82,17 +79,15 @@
   color: #1f2a44;
 }
 
-/* ✅ DROPDOWN WRAPPER (NEW - positioning fix) */
 .dropdown-wrapper {
   position: absolute;
   top: 160px;
   left: 50%;
   transform: translateX(-50%);
   width: 500px;
-  z-index: 9999; /* 🔥 FIX */
+  z-index: 9999; 
 }
 
-/* DROPDOWN */
 .dropdown {
   width: 100%;
   height: 60px;
@@ -100,24 +95,26 @@
   border-radius: 40px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 25px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  justify-content: flex-start;
+  padding: 0 25px;  
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
 
 .dropdown span {
   color: #9ca3af;
-  letter-spacing: 1px;
+  /* letter-spacing: 1px; */
+  font-weight:bold;
+  font-size: 18px;
 }
 
-/* ARROW */
 .arrow {
   width: 35px;
   height: 35px;
   border-radius: 50%;
   background: #9ca3af;
   position: relative;
+  margin-left: auto;
   transition: transform 0.3s ease;
 }
 
@@ -137,7 +134,6 @@
   transform: translate(-50%, -60%) rotate(45deg);
 }
 
-/* ✅ DROPDOWN LIST (MAIN FIX) */
 
 .dropdown-list {
   position: absolute;
@@ -149,11 +145,10 @@
   max-height: 320px;
   overflow-y: auto;
 
-  z-index: 9999; /* 🔥 FIX */
+  z-index: 9999; 
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 }
 
-/* ITEMS */
 .dropdown-list li {
   padding: 14px 20px;
   cursor: pointer;
@@ -170,14 +165,13 @@
   background: #f9fafb;
 }
 
-/* LEFT CARD */
 .left-card {
   position: absolute;
   left: 0;
   top: 240px;
 
   width: 260px;
-  padding: 32px 24px;
+  padding: 23px 24px;
 
   background: #ffffff;
   border-radius: 0 20px 20px 0;
@@ -188,11 +182,12 @@
 
 .left-card p {
   font-family: "BuenosAires";
-
-  color: #6b7280;
+font-weight: 400;
+  color: #000;
   margin-bottom: 10px;
   padding-left: 16px;
   letter-spacing: 0.2px;
+  font-size: 14px;
 }
 
 .left-card h2 {
@@ -200,13 +195,12 @@
 
   font-size: 30px;
   font-weight: 400;
-  padding-left: 46px;
+  padding-left: 50px;
   color: #1f2a44;
-  line-height: 1.35;
+  line-height: 1.2;
   margin: 0;
 }
 
-/* MAIN CONTENT */
 .content {
   position: absolute;
   top: 260px;
@@ -225,7 +219,6 @@
   line-height: 1.4;
 }
 
-/* DIVIDER */
 .star {
   display: flex;
   align-items: center;
@@ -248,7 +241,6 @@
   height: auto;
 }
 
-/* HASHTAG */
 .content h3 {
   font-family: "BuenosAires";
 
@@ -265,7 +257,6 @@
   font-weight: 400;
 }
 
-/* ================= MOBILE (≤768px) ================= */
 @media (max-width: 768px) {
   .project-section {
     height: auto;
@@ -273,12 +264,10 @@
     text-align: center;
   }
 
-  /* REMOVE BIG LEFT IMAGE */
   .bg-one {
     display: none;
   }
 
-  /* BUILDINGS CENTER */
   .bg-buildings {
     width: 100%;
     height: 220px;
@@ -288,7 +277,6 @@
     opacity: 0.3;
   }
 
-  /* BADGE */
   .badge-wrapper {
     position: relative;
     right: auto;
@@ -311,7 +299,6 @@
     font-size: 16px;
   }
 
-  /* DROPDOWN */
   .dropdown-wrapper {
     position: relative;
     top: auto;
@@ -330,7 +317,6 @@
     font-size: 12px;
   }
 
-  /* LEFT CARD -> CENTER CARD */
   .left-card {
     position: relative;
     top: auto;
@@ -351,7 +337,6 @@
     font-size: 20px;
   }
 
-  /* MAIN CONTENT */
   .content {
     position: relative;
     top: auto;
@@ -365,13 +350,11 @@
     line-height: 1.5;
   }
 
-  /* STAR LINE */
   .star::before,
   .star::after {
     width: 60px;
   }
 
-  /* HASHTAG */
   .content h3 {
     font-size: 18px;
     letter-spacing: 1px;

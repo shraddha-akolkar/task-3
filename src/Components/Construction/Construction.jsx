@@ -25,8 +25,8 @@ export default function Construction() {
         <div className="video-card">
           <div className="video-inner">
             <iframe
-              width="633"
-              height="379"
+              width="552"
+              height="310"
               src="https://www.youtube.com/embed/3x1r60l97F0"
               title="Township Codename Pegasus Construction Update Video January 2026 | VTP Realty"
               frameborder="0"

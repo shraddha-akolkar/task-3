@@ -25,18 +25,18 @@
 .terms-bottom ul {
     display: flex;
     flex-direction: column;
-    gap: 10px;             
+    gap: 7px;             
     list-style-type: disc; 
 }
 
 .terms-bottom ul li{
-    gap: 10px;
+    gap: 5px;
     /* padding-bottom: 10px; */
 }
 
 .terms-bottom li::marker {
-  color: #2c3e6b;   /* your theme color */
-  font-size: 23px;  /* increase size */
+  color: #2c3e6b;  
+  font-size: 23px; 
 }
 
 
@@ -62,12 +62,12 @@
   }
 
   .terms-bottom {
-    padding-left: 0; /* ✅ remove big left gap */
+    padding-left: 0; 
   }
 
   .terms-bottom ul {
     gap: 12px;
-    padding-left: 18px; /* ✅ proper bullet alignment */
+    padding-left: 18px; 
   }
 
   .terms-bottom ul li {
@@ -80,7 +80,6 @@
 
 
 
-/* ================= TABLET VIEW ================= */
 @media (min-width: 769px) and (max-width: 1024px) {
 
   .terms-section {
@@ -93,7 +92,7 @@
   }
 
   .terms-bottom {
-    padding-left: 20px; /* ✅ reduce from 50px */
+    padding-left: 20px; 
   }
 
   .terms-bottom ul {

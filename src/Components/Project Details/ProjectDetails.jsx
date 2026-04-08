@@ -52,10 +52,8 @@ const ProjectDetails = ({ Project_Id = null }) => {
 
   return (
     <section className="pd_section">
-      {/* ── TOP BAR: logo + tabs + download ── */}
       <div className="pd_topbar">
         <div className="pd_logo_card">
-          {/* Replace src with real logo later */}
           <img
             src={`https://placehold.co/160x56/fff/8b2635?text=${encodeURIComponent(project.name)}&font=playfair-display`}
             alt={project.name}
@@ -63,7 +61,6 @@ const ProjectDetails = ({ Project_Id = null }) => {
           />
         </div>
 
-        {/* Nav tabs */}
         <nav className="pd_tabs" role="tablist">
           {TABS.map((tab) => (
             <button
@@ -79,7 +76,6 @@ const ProjectDetails = ({ Project_Id = null }) => {
           ))}
         </nav>
 
-        {/* Download Brochure */}
         <div className="pd_pdf_section">
           <button
             className="pd_download_btn"
@@ -92,7 +88,6 @@ const ProjectDetails = ({ Project_Id = null }) => {
         </div>
       </div>
 
-      {/* ── TAB CONTENT ── */}
       <div className="pd_tab_content">
         {activeTab === "Unit Plans" && (
           <div className="pd_table_wrapper">
@@ -146,7 +141,7 @@ const ProjectDetails = ({ Project_Id = null }) => {
               <div
                 className="pd_gallery_track"
                 style={{
-                  transform: `translateX(-${currentIndex * 40}%)`,
+                  transform: `translateX(calc(-${currentIndex * 35}% + 32.5%))`,
                 }}
               >
                 {project.gallery.map((img, i) => (
@@ -160,7 +155,6 @@ const ProjectDetails = ({ Project_Id = null }) => {
               </div>
             </div>
 
-            {/* CONTROLS */}
             <div className="pd_gallery_controls">
               <button
                 onClick={() =>
@@ -187,7 +181,6 @@ const ProjectDetails = ({ Project_Id = null }) => {
 
         {activeTab === "Overview" && (
           <div className="pd_overview_section">
-            {/* LEFT IMAGE */}
             <div className="pd_overview_img">
               <img
                 src={project.overview.image}
@@ -195,7 +188,6 @@ const ProjectDetails = ({ Project_Id = null }) => {
               />
             </div>
 
-            {/* RIGHT CONTENT */}
             <div className="pd_overview_content">
               <h2>{project.overview.heading}</h2>
 
@@ -238,13 +230,13 @@ const ProjectDetails = ({ Project_Id = null }) => {
               <div
                 className="pd_gallery_track"
                 style={{
-                  transform: `translateX(-${currentIndex * 40}%)`,
+                  transform: `translateX(calc(-${currentIndex * 35}% + 32.5%))`,
                 }}
               >
                 {project.amenities.map((a, i) => (
                   <div
                     key={a.id}
-                    className={`pd_slide ${i === currentIndex ? "active" : ""}`}
+                    className={`pd_slide ${i === currentIndex + 1 ? "active" : ""}`}
                   >
                     <img src={a.image} alt={a.name} />
                   </div>
@@ -252,7 +244,6 @@ const ProjectDetails = ({ Project_Id = null }) => {
               </div>
             </div>
 
-            {/* CONTROLS */}
             <div className="pd_gallery_controls">
               <button
                 onClick={() =>

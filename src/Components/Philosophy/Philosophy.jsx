@@ -57,7 +57,7 @@ const Philosophy = () => {
                   : { opacity: 0, x: 50 }
             }
             whileInView={{ opacity: 1, x: 0, y: 0 }}
-            transition={{ duration: 1.2, ease: "easeOut" }} // 👈 smoother + slower
+            transition={{ duration: 1.2, ease: "easeOut" }}
             viewport={{ once: true }}
           >
             <div className="icon-wrapper">{card.icon}</div>

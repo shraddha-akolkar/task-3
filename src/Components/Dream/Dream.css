@@ -19,17 +19,17 @@
   padding-bottom: 10px;
   font-family: "BuenosAires";
   font-size: 13px;
+  line-height: 1.2;
 }
 
 .bottom-section p:nth-child(3) {
   padding-bottom: 0;
 }
 
-/* Mobile */
 @media (max-width: 768px) {
 
   .dream-section {
-    padding: 50px 15px; /* ✅ clean spacing */
+    padding: 50px 15px;
     background-color: #ebe9e5;
   }
 
@@ -37,13 +37,13 @@
      padding-bottom: 18px;
     max-width: 250px;
 
-    margin: 0 auto; /* ✅ THIS FIXES CENTERING */
+    margin: 0 auto;
     text-align: center;
   }
 
   .top-header h3 {
     font-size: 16px;
-    font-weight: 600; /* ✅ bold like screenshot */
+    font-weight: 600; 
     line-height: 1.5;
     text-align: center;
   }
@@ -51,20 +51,19 @@
   .bottom-section {
     display: flex;
     flex-direction: column;
-    gap: 14px; /* ✅ equal spacing instead of padding */
+    gap: 14px; 
   }
 
   .bottom-section p {
     font-size: 12.5px;
     line-height: 1.7;
-    text-align: center; /* ✅ center like screenshot */
-    padding-bottom: 0; /* ❌ remove old spacing */
+    text-align: center; 
+    padding-bottom: 0;
   }
 
  
 }
 
-/* Tablet */
 @media (min-width: 769px) and (max-width: 1024px) {
 
   .dream-section {

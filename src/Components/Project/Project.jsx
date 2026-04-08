@@ -10,10 +10,6 @@ const projects = [
   { name: "EARTH 1 BY VTP LUXE - Mahalunge, Pune", id: "proj_004" },
   { name: "CIELO by VTP Luxe - Bavdhan Pune", id: "proj_005" },
   { name: "FLAMANTE BY VTP LUXE - Kharadi, Pune", id: "proj_006" },
-  { name: "VTP DOLCE VITA - New Kharadi, Pune", id: "proj_007" },
-  { name: "VTP EUPHORIA - New Kharadi, Pune", id: "proj_008" },
-  { name: "VTP Codename Vibrance - Baner Sus, Pune", id: "proj_009" },
-  { name: "Altamira by VTP Luxe - Kharadi, Pune", id: "proj_010" },
 ];
 
 const ProjectSection = () => {
@@ -23,10 +19,8 @@ const ProjectSection = () => {
   return (
     <>
       <section className="project-section">
-        {/* BIG 1 */}
         <div className="bg-one"></div>
 
-        {/* BADGE */}
         <div className="badge-wrapper">
           <div className="badge-bg"></div>
           <div className="badge-text">
@@ -35,10 +29,8 @@ const ProjectSection = () => {
           </div>
         </div>
 
-        {/* BUILDINGS */}
         <div className="bg-buildings"></div>
 
-        {/* Dropdown (UPDATED FUNCTIONAL) */}
         <div className="dropdown-wrapper">
           <div
             className={`dropdown ${open ? "open" : ""}`}
@@ -73,13 +65,11 @@ const ProjectSection = () => {
           )}
         </div>
 
-        {/* Left card */}
         <div className="left-card">
           <p>1 Choice, Infinite Possibilities</p>
           <h2>With VTP Just 1 Is Enough.</h2>
         </div>
 
-        {/* Main content */}
         <div className="content">
           <h1>
             Homeownership Made Easy <br />
@@ -95,7 +85,6 @@ const ProjectSection = () => {
           </h3>
         </div>
       </section>
-      {/* Pass selected project */}
       {selected && <ProjectDetails Project_Id={selected} />}
     </>
   );

@@ -4,7 +4,7 @@ import grassImg from "../../assets/images/grass.webp";
 import star from "../../assets/images/star.png";
 const Overview = () => {
   return (
-    <div id="overview">
+    <div id="overview" className="overview">
       <div className="overview-section">
         <div className="img-section">
           <img src={grassImg} alt="" />

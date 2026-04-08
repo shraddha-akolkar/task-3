@@ -137,7 +137,8 @@ const Enquire = () => {
                     <input type="checkbox" />
                     <span className="checkmark"></span>
                     <span className="label-text">
-                      You authorize, as per our <b>Privacy Policy </b>, Calls
+                      You authorize, as per our{" "}
+                      <strong className="strong">Privacy Policy </strong>, Calls
                       and Communication via Calls, SMS, RCS, and WhatsApp.
                     </span>
                   </label>
