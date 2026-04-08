@@ -265,40 +265,99 @@
   font-weight: 400;
 }
 
-/* ===== MOBILE RESPONSIVE FIX ===== */
+/* ================= MOBILE (≤768px) ================= */
 @media (max-width: 768px) {
+  .project-section {
+    height: auto;
+    padding: 40px 20px 80px;
+    text-align: center;
+  }
+
+  /* REMOVE BIG LEFT IMAGE */
   .bg-one {
     display: none;
   }
 
-  .badge-wrapper {
-    display: none;
+  /* BUILDINGS CENTER */
+  .bg-buildings {
+    width: 100%;
+    height: 220px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    opacity: 0.3;
   }
 
-  .dropdown-wrapper {
-    width: calc(100% - 40px);
-    top: 80px;
+  /* BADGE */
+  .badge-wrapper {
+    position: relative;
+    right: auto;
+    margin: 0 auto 20px;
+    width: 220px;
+    height: 160px;
+  }
+
+  .badge-text {
+    top: 20px;
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  .badge-text span {
+    font-size: 14px;
+  }
+
+  .badge-text h4 {
+    font-size: 16px;
+  }
+
+  /* DROPDOWN */
+  .dropdown-wrapper {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    width: 100%;
+    margin-bottom: 20px;
   }
 
   .dropdown {
     height: 50px;
-    padding: 0 18px;
+    padding: 0 16px;
   }
 
-  /* Uppercase dropdown text */
   .dropdown span {
-    text-transform: uppercase;
-    font-size: 13px;
-    letter-spacing: 1px;
+    font-size: 12px;
   }
 
+  /* LEFT CARD -> CENTER CARD */
+  .left-card {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 60%;
+    margin: 20px auto;
+    border-radius: 16px;
+    text-align: center;
+  }
+
+  .left-card p {
+    padding-left: 0;
+    font-size: 12px;
+  }
+
+  .left-card h2 {
+    padding-left: 0;
+    font-size: 20px;
+  }
+
+  /* MAIN CONTENT */
   .content {
-    top: 155px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: calc(100% - 40px);
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    margin-top: 20px;
   }
 
   .content h1 {
@@ -306,38 +365,18 @@
     line-height: 1.5;
   }
 
-  .content h3 {
-    font-size: 18px;
-  }
-
+  /* STAR LINE */
   .star::before,
   .star::after {
-    width: 70px;
+    width: 60px;
   }
 
-  /* ✅ Left card — wider, moved up, better padding */
-  .left-card {
-    top: 295px; /* moved up */
-    width: calc(60% + 20px); /* wider */
-    padding: 20px 24px;
+  /* HASHTAG */
+  .content h3 {
+    font-size: 18px;
+    letter-spacing: 1px;
   }
-
-  .left-card p {
-    font-size: 12px;
-    padding-left: 8px;
-    margin-bottom: 6px;
-  }
-
-  .left-card h2 {
-    font-size: 22px;
-    padding-left: 16px;
-    line-height: 1.4;
-  }
-
-  /* ✅ Buildings — bigger and more visible */
-  .bg-buildings {
-    width: 75%;
-    height: 320px;
-    opacity: 1;
+  .badge-wrapper {
+    display: none;
   }
 }
