@@ -398,13 +398,13 @@
   border-radius: 16px;
   overflow: hidden;
 
-  transform: scale(0.9);   /* ✅ side small */
+  transform: scale(0.9);   
   opacity: 0.6;
   transition: 0.4s ease;
 }
 
 .pd_slide.active {
-  transform: scale(1.1);   /* ✅ ONLY center big */
+  transform: scale(1.1);   
   opacity: 1;
   z-index: 2;
 }
