@@ -10,12 +10,11 @@
   /* justify-content: space-between;
    */
   /* gap: 20px; */
-justify-content: flex-start;
-  padding: 40px 0px 40px 100px;;
+  justify-content: flex-start;
+  padding: 40px 0px 40px 100px;
   border-radius: 12px;
 
   overflow: visible; /* IMPORTANT */
-
 }
 
 /* ───────── LOGO CARD ───────── */
@@ -23,7 +22,7 @@ justify-content: flex-start;
   background: #fff;
   padding: 30px 25px;
   border-radius: 12px;
-  box-shadow:rgba(26, 26, 26, 0.145) 0px 0px 10px;;
+  box-shadow: rgba(26, 26, 26, 0.145) 0px 0px 10px;
 }
 
 .pd_logo_img {
@@ -41,7 +40,6 @@ justify-content: flex-start;
   /* ADD THIS 👇 */
   background: #e9e4e4; /* soft grey/pink like screenshot */
   padding: 11px 62px;
-;
   flex: 1;
   /* border-radius: 8px; */
 }
@@ -82,23 +80,23 @@ justify-content: flex-start;
 
 /* ───────── DOWNLOAD BUTTON ───────── */
 
-.pd_pdf_section{
-
-/* padding: [top] [right] [bottom] [left] */
-padding: 10px 0 10px 0px;
+.pd_pdf_section {
+  /* padding: [top] [right] [bottom] [left] */
+  padding: 10px 0 10px 0px;
   background: #e9e4e4; /* soft grey/pink like screenshot */
 }
 .pd_download_btn {
   display: flex;
   align-items: center;
   gap: 12px;
- margin-left: auto;
+  margin-left: auto;
 
   position: relative;
-  transform: translateX(-50px);   top: 0px;   
+  transform: translateX(-50px);
+  top: 0px;
   border: 1px solid #1c2b4a;
   background: #fff;
-  padding:8px 16px;
+  padding: 8px 16px;
   border-radius: 8px;
   margin-left: auto;
   font-weight: 500;
@@ -116,8 +114,6 @@ padding: 10px 0 10px 0px;
   height: 18px;
   background: #ccc;
 }
-
-
 
 /* ───────── OVERVIEW SECTION ───────── */
 
@@ -152,26 +148,23 @@ padding: 10px 0 10px 0px;
   color: #2c3a5b;
   line-height: 1.2;
   margin-bottom: 15px;
-  font-family: 'BuenosAires';
-
+  font-family: "BuenosAires";
 }
 
 .pd_overview_desc {
   font-size: 16px;
   /* line-height: 1.8; */
   color: #555;
-  font-family: 'BuenosAires';
+  font-family: "BuenosAires";
   margin-bottom: 16px;
 }
-
-
 
 /* ───────── HIGHLIGHTS WRAPPER ───────── */
 
 .pd_highlights_wrapper {
   max-width: 1030px;
   /* padding: [top] [right] [bottom] [left]; */
-  margin: 0px  100px 40px;
+  margin: 0px 100px 40px;
   padding: 40px 35px;
 
   border: 1px solid #2c3a5b;
@@ -210,19 +203,15 @@ padding: 10px 0 10px 0px;
   font-size: 16px;
   font-weight: 600;
   color: #2c2c2c;
-  font-family: 'BuenosAires';
-
+  font-family: "BuenosAires";
 }
 
 /* DESCRIPTION */
 .pd_highlight_item p {
   font-size: 14px;
   color: #8a8a8a;
-  font-family: 'BuenosAires';
-
+  font-family: "BuenosAires";
 }
-
-
 
 /* ───────── AMENITIES SECTION ───────── */
 
@@ -258,7 +247,7 @@ padding: 10px 0 10px 0px;
   width: 520px;
   height: 360px;
   transform: scale(1.05);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 /* IMAGE */
@@ -292,7 +281,6 @@ padding: 10px 0 10px 0px;
   color: #fff;
 }
 
-
 /* ───────── TABLE WRAPPER ───────── */
 .pd_table_wrapper {
   max-width: 950px;
@@ -325,16 +313,14 @@ padding: 10px 0 10px 0px;
 .pd_unit_table th {
   position: relative;
   height: 70px;
-  font-family: 'BuenosAires';
-
+  font-family: "BuenosAires";
 }
 
 .pd_unit_table th,
 .pd_unit_table td {
   width: 33%;
   text-align: center;
-  font-family: 'BuenosAires';
-
+  font-family: "BuenosAires";
 }
 
 /* ───────── FLOATING PILLS ───────── */
@@ -344,8 +330,8 @@ padding: 10px 0 10px 0px;
   top: 0;
   left: 50%;
   transform: translate(-50%, -50%);
-  
-  width: 70%;              /* 🔥 controls pill width */
+
+  width: 70%; /* 🔥 controls pill width */
   text-align: center;
 
   background: #f3f2f2;
@@ -354,11 +340,10 @@ padding: 10px 0 10px 0px;
   font-size: 14px;
   font-weight: 500;
 
-  box-shadow: 
-    -4px -4px 10px rgba(255,255,255,0.9),
-    4px 4px 10px rgba(0,0,0,0.1);
+  box-shadow:
+    -4px -4px 10px rgba(255, 255, 255, 0.9),
+    4px 4px 10px rgba(0, 0, 0, 0.1);
 }
-
 
 /* ───────── ROWS ───────── */
 .pd_row {
@@ -423,7 +408,6 @@ padding: 10px 0 10px 0px;
   height: 16px;
 }
 
-
 /* ───────── GALLERY WRAPPER ───────── */
 .pd_gallery {
   padding: 40px 0;
@@ -443,7 +427,7 @@ padding: 10px 0 10px 0px;
 }
 
 .pd_slide {
-  flex: 0 0 60%;   /* 🔥 make center dominant */
+  flex: 0 0 60%; /* 🔥 make center dominant */
   height: 360px;
   border-radius: 16px;
   overflow: hidden;
@@ -478,6 +462,82 @@ padding: 10px 0 10px 0px;
   border-radius: 50%;
   border: none;
   background: #fff;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
   cursor: pointer;
+}
+
+/* ───────── MOBILE RESPONSIVE ───────── */
+@media (max-width: 768px) {
+  /* Fix topbar layout on mobile */
+  .pd_topbar {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 16px;
+    gap: 12px;
+  }
+
+  /* Logo card smaller */
+  .pd_logo_card {
+    padding: 16px;
+    align-self: flex-start;
+  }
+
+  /* Tabs scroll horizontally instead of overflowing */
+  .pd_tabs {
+    gap: 24px;
+    padding: 10px 16px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .pd_tabs::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+  }
+
+  /* Prevent tab text from wrapping (keeps tabs single-line scrollable) */
+  .pd_tab_btn {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  /* Download button */
+  .pd_download_btn {
+    transform: none;
+    margin-left: 0;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .pd_pdf_section {
+    padding: 0;
+  }
+
+  /* Overview section */
+  .pd_overview_section {
+    flex-direction: column;
+    padding: 20px 16px 40px;
+  }
+
+  .pd_overview_img img {
+    height: 200px;
+  }
+
+  /* Highlights grid — 2 cols on mobile */
+  .pd_highlights_wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 16px 40px;
+    padding: 24px 16px;
+    row-gap: 32px;
+  }
+
+  /* Table horizontal scroll */
+  .pd_table_wrapper {
+    margin: 20px 16px;
+    overflow-x: auto;
+  }
+
+  .pd_unit_table {
+    min-width: 480px;
+  }
 }
